@@ -6,7 +6,7 @@
   <link href="https://codingxboy.github.io/atom.xml" rel="self"/>
   
   <link href="https://codingxboy.github.io/"/>
-  <updated>2023-11-09T09:12:39.808Z</updated>
+  <updated>2023-11-10T07:19:58.415Z</updated>
   <id>https://codingxboy.github.io/</id>
   
   <author>
@@ -17,38 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>medias</title>
+    <title>jQuery应用</title>
     <link href="https://codingxboy.github.io/2023/11/09/medias/"/>
     <id>https://codingxboy.github.io/2023/11/09/medias/</id>
     <published>2023-11-09T09:12:39.000Z</published>
-    <updated>2023-11-09T09:12:39.808Z</updated>
+    <updated>2023-11-10T07:19:58.415Z</updated>
     
     
     
     
+    <category term="web前端" scheme="https://codingxboy.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端" scheme="https://codingxboy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
-    <title>java基础面试题</title>
+    <title>运维部署实践</title>
     <link href="https://codingxboy.github.io/2023/11/08/newpapername/"/>
     <id>https://codingxboy.github.io/2023/11/08/newpapername/</id>
     <published>2023-11-08T09:41:25.000Z</published>
-    <updated>2023-11-08T09:53:07.535Z</updated>
+    <updated>2023-11-10T07:18:49.274Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;java&quot;&gt;&lt;a href=&quot;#java&quot; class=&quot;headerlink&quot; title=&quot;java&quot;&gt;&lt;/a&gt;java&lt;/h3&gt;&lt;h4 id=&quot;java面试题&quot;&gt;&lt;a href=&quot;#java面试题&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;Linux&quot;&gt;&lt;a href=&quot;#Linux&quot; class=&quot;headerlink&quot; title=&quot;Linux&quot;&gt;&lt;/a&gt;Linux&lt;/h3&gt;&lt;h4 id=&quot;Linux常见部署命令&quot;&gt;&lt;a href=&quot;#Linux常见部署命令&quot;</summary>
         
       
     
     
     
     
-    <category term="java" scheme="https://codingxboy.github.io/tags/java/"/>
+    <category term="Linux" scheme="https://codingxboy.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -70,6 +74,241 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>Java8新特性及使用(二)</title>
+    <link href="https://codingxboy.github.io/2020/11/14/hou-duan/java/java8-xin-te-xing-ji-shi-yong-er/"/>
+    <id>https://codingxboy.github.io/2020/11/14/hou-duan/java/java8-xin-te-xing-ji-shi-yong-er/</id>
+    <published>2020-11-14T14:00:00.000Z</published>
+    <updated>2023-11-10T07:07:11.112Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;扩展注解的支持&quot;&gt;&lt;a href=&quot;#扩展注解的支持&quot; class=&quot;headerlink&quot; title=&quot;扩展注解的支持&quot;&gt;&lt;/a&gt;扩展注解的支持&lt;/h2&gt;&lt;p&gt;Java</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://codingxboy.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="Java" scheme="https://codingxboy.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PostgreSQL基础知识整理</title>
+    <link href="https://codingxboy.github.io/2020/10/25/shu-ju-ku/postgresql-ji-chu-zhi-shi-zheng-li/"/>
+    <id>https://codingxboy.github.io/2020/10/25/shu-ju-ku/postgresql-ji-chu-zhi-shi-zheng-li/</id>
+    <published>2020-10-25T07:33:00.000Z</published>
+    <updated>2023-11-10T07:16:08.494Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;数据库操作DML&quot;&gt;&lt;a href=&quot;#数据库操作DML&quot; class=&quot;headerlink&quot; title=&quot;数据库操作DML&quot;&gt;&lt;/a&gt;数据库操作DML&lt;/h2&gt;&lt;h3 id=&quot;CREATE-TABLE&quot;&gt;&lt;a href=&quot;#CREATE-TABLE&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="数据库" scheme="https://codingxboy.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+    <category term="PostgreSQL" scheme="https://codingxboy.github.io/tags/PostgreSQL/"/>
+    
+    <category term="数据库" scheme="https://codingxboy.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java面向对象设计之代理模式</title>
+    <link href="https://codingxboy.github.io/2020/09/26/ruan-jian-she-ji-gui-fan/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-dai-li-mo-shi/"/>
+    <id>https://codingxboy.github.io/2020/09/26/ruan-jian-she-ji-gui-fan/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-dai-li-mo-shi/</id>
+    <published>2020-09-26T13:50:00.000Z</published>
+    <updated>2023-11-10T07:14:17.959Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、模式动机&quot;&gt;&lt;a href=&quot;#一、模式动机&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件设计" scheme="https://codingxboy.github.io/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="Java" scheme="https://codingxboy.github.io/tags/Java/"/>
+    
+    <category term="设计模式" scheme="https://codingxboy.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java面向对象设计之单例模式</title>
+    <link href="https://codingxboy.github.io/2020/07/29/ruan-jian-she-ji-gui-fan/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-dan-li-mo-shi/"/>
+    <id>https://codingxboy.github.io/2020/07/29/ruan-jian-she-ji-gui-fan/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-dan-li-mo-shi/</id>
+    <published>2020-07-29T15:30:00.000Z</published>
+    <updated>2023-11-10T07:13:17.754Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;模式动机&quot;&gt;&lt;a href=&quot;#模式动机&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件设计" scheme="https://codingxboy.github.io/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="Java" scheme="https://codingxboy.github.io/tags/Java/"/>
+    
+    <category term="设计模式" scheme="https://codingxboy.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java面向对象设计之工厂方法模式</title>
+    <link href="https://codingxboy.github.io/2020/06/14/ruan-jian-she-ji-gui-fan/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-gong-han-fang-fa-mo-shi/"/>
+    <id>https://codingxboy.github.io/2020/06/14/ruan-jian-she-ji-gui-fan/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-gong-han-fang-fa-mo-shi/</id>
+    <published>2020-06-14T14:50:00.000Z</published>
+    <updated>2023-11-10T07:12:18.955Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、模式定义&quot;&gt;&lt;a href=&quot;#一、模式定义&quot; class=&quot;headerlink&quot; title=&quot;一、模式定义&quot;&gt;&lt;/a&gt;一、模式定义&lt;/h2&gt;&lt;p&gt;工厂方法模式(&lt;code&gt;Factory Method</summary>
+        
+      
+    
+    
+    
+    <category term="软件设计" scheme="https://codingxboy.github.io/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="Java" scheme="https://codingxboy.github.io/tags/Java/"/>
+    
+    <category term="设计模式" scheme="https://codingxboy.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用Bash命令整理之其他常用命令</title>
+    <link href="https://codingxboy.github.io/2020/05/13/kai-fa-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-qi-ta-chang-yong-ming-ling/"/>
+    <id>https://codingxboy.github.io/2020/05/13/kai-fa-gong-ju/linux/chang-yong-bash-ming-ling-zheng-li-zhi-qi-ta-chang-yong-ming-ling/</id>
+    <published>2020-05-13T10:15:00.000Z</published>
+    <updated>2023-11-10T07:10:28.910Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-hostname-查看主机名&quot;&gt;&lt;a href=&quot;#1-hostname-查看主机名&quot; class=&quot;headerlink&quot; title=&quot;1. hostname - 查看主机名&quot;&gt;&lt;/a&gt;1. hostname -</summary>
+        
+      
+    
+    
+    
+    <category term="软件工具" scheme="https://codingxboy.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Linux" scheme="https://codingxboy.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring基础介绍</title>
+    <link href="https://codingxboy.github.io/2020/03/17/hou-duan/spring/spring-ji-chu-jie-shao/"/>
+    <id>https://codingxboy.github.io/2020/03/17/hou-duan/spring/spring-ji-chu-jie-shao/</id>
+    <published>2020-03-17T14:32:00.000Z</published>
+    <updated>2023-11-10T07:08:30.333Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、Spring-概述&quot;&gt;&lt;a href=&quot;#一、Spring-概述&quot; class=&quot;headerlink&quot; title=&quot;一、Spring 概述&quot;&gt;&lt;/a&gt;一、Spring 概述&lt;/h2&gt;&lt;h3 id=&quot;（一）Spring-的简史&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://codingxboy.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="Java" scheme="https://codingxboy.github.io/tags/Java/"/>
+    
+    <category term="Spring" scheme="https://codingxboy.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java8新特性及使用(一)</title>
+    <link href="https://codingxboy.github.io/2019/12/13/hou-duan/java/java8-xin-te-xing-ji-shi-yong-yi/"/>
+    <id>https://codingxboy.github.io/2019/12/13/hou-duan/java/java8-xin-te-xing-ji-shi-yong-yi/</id>
+    <published>2019-12-13T14:30:00.000Z</published>
+    <updated>2023-11-10T07:04:09.434Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;新特性列表&quot;&gt;&lt;a href=&quot;#新特性列表&quot; class=&quot;headerlink&quot; title=&quot;新特性列表&quot;&gt;&lt;/a&gt;新特性列表&lt;/h2&gt;&lt;p&gt;以下是Java8中的引入的部分新特性。关于Java8新特性更详细的介绍可参考&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://codingxboy.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="Java" scheme="https://codingxboy.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript基础教程</title>
+    <link href="https://codingxboy.github.io/2019/09/14/qian-duan/javascript-ji-chu-jiao-cheng/"/>
+    <id>https://codingxboy.github.io/2019/09/14/qian-duan/javascript-ji-chu-jiao-cheng/</id>
+    <published>2019-09-13T16:12:00.000Z</published>
+    <updated>2023-11-10T07:02:28.342Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、JavaScript介绍&quot;&gt;&lt;a href=&quot;#一、JavaScript介绍&quot; class=&quot;headerlink&quot; title=&quot;一、JavaScript介绍&quot;&gt;&lt;/a&gt;一、JavaScript介绍&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://codingxboy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://codingxboy.github.io/tags/JavaScript/"/>
     
   </entry>
   
