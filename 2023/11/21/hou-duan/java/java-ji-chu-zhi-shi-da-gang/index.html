@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="沙漠之狐，jochen">
-    <meta name="description" content="
-title: Java基础知识大纲date: 2023-11-21 23:58:06author: jochenxiaoimg: https://statics.sh1a.qingstor.com/2018/11/13/java8-1.j">
+    <meta name="keywords" content="Java基础知识大纲, 沙漠之狐，jochen">
+    <meta name="description" content="Java知识大纲一.java基础知识1.Arraylist 原理以及特性ArrayList 是 Java 中的一个动态数组实现，它属于 Java Collections Framework 的一部分。以下是关于 ArrayList 的一些原">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +17,7 @@ title: Java基础知识大纲date: 2023-11-21 23:58:06author: jochenxiaoimg: htt
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>沙漠之狐</title>
+    <title>Java基础知识大纲 | 沙漠之狐</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -275,12 +274,12 @@ title: Java基础知识大纲date: 2023-11-21 23:58:06author: jochenxiaoimg: htt
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://statics.sh1a.qingstor.com/2018/11/13/java8-1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Java基础知识大纲</h1>
                 </div>
             </div>
         </div>
@@ -302,12 +301,25 @@ title: Java基础知识大纲date: 2023-11-21 23:58:06author: jochenxiaoimg: htt
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
+                                后端
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -325,7 +337,7 @@ title: Java基础知识大纲date: 2023-11-21 23:58:06author: jochenxiaoimg: htt
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    14.1k
+                    14k
                 </div>
                 
 
@@ -345,12 +357,7 @@ title: Java基础知识大纲date: 2023-11-21 23:58:06author: jochenxiaoimg: htt
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-<p>title: Java基础知识大纲<br>date: 2023-11-21 23:58:06<br>author: jochenxiao<br>img: <a target="_blank" rel="noopener" href="https://statics.sh1a.qingstor.com/2018/11/13/java8-1.jpg">https://statics.sh1a.qingstor.com/2018/11/13/java8-1.jpg</a><br>categories: 后端<br>tags:</p>
-<ul>
-<li>Java<br>​—</li>
-</ul>
-<h2 id="Java基础知识大纲"><a href="#Java基础知识大纲" class="headerlink" title="Java基础知识大纲"></a>Java基础知识大纲</h2><h3 id="一-java基础问题"><a href="#一-java基础问题" class="headerlink" title="一.java基础问题"></a>一.java基础问题</h3><h4 id="1-Arraylist-原理以及特性"><a href="#1-Arraylist-原理以及特性" class="headerlink" title="1.Arraylist 原理以及特性"></a>1.Arraylist 原理以及特性</h4><p><code>ArrayList</code> 是 Java 中的一个动态数组实现，它属于 Java Collections Framework 的一部分。以下是关于 <code>ArrayList</code> 的一些原理和特性：</p>
+                <h2 id="Java知识大纲"><a href="#Java知识大纲" class="headerlink" title="Java知识大纲"></a>Java知识大纲</h2><h3 id="一-java基础知识"><a href="#一-java基础知识" class="headerlink" title="一.java基础知识"></a>一.java基础知识</h3><h4 id="1-Arraylist-原理以及特性"><a href="#1-Arraylist-原理以及特性" class="headerlink" title="1.Arraylist 原理以及特性"></a>1.Arraylist 原理以及特性</h4><p><code>ArrayList</code> 是 Java 中的一个动态数组实现，它属于 Java Collections Framework 的一部分。以下是关于 <code>ArrayList</code> 的一些原理和特性：</p>
 <h5 id="1-1-底层实现原理："><a href="#1-1-底层实现原理：" class="headerlink" title="1.1 底层实现原理："></a>1.1 <strong>底层实现原理：</strong></h5><ul>
 <li><code>ArrayList</code> 的底层是基于数组实现的，它通过一个动态数组来存储元素。</li>
 <li>当数组容量不足以容纳新的元素时，<code>ArrayList</code> 会自动增加容量，通常是当前容量的 1.5 倍。</li>
@@ -1883,7 +1890,7 @@ public class AppConfig {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">JochenXiao</a>
+                    <a href="/about" rel="external nofollow noreferrer">jochenxiao</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -1906,7 +1913,7 @@ public class AppConfig {
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">JochenXiao</a>
+                    <a href="/about" target="_blank">jochenxiao</a>
                     !
                 </span>
             </div>
@@ -1930,7 +1937,11 @@ public class AppConfig {
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -2011,10 +2022,9 @@ public class AppConfig {
                 <a href="/2023/11/21/hou-duan/java/java-ji-chu-zhi-shi-da-gang/">
                     <div class="card-image">
                         
+                        <img src="https://statics.sh1a.qingstor.com/2018/11/13/java8-1.jpg" class="responsive-img" alt="Java基础知识大纲">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">Java基础知识大纲</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -2029,13 +2039,25 @@ public class AppConfig {
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            JochenXiao
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
+                                    后端
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
