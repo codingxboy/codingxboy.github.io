@@ -1,0 +1,1423 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="软件测试之web自动化测试, 沙漠之狐，jochen">
+    <meta name="description" content="软件测试之web自动化测试一. web自动化入门1.什么是自动化测试概念：让程序代替人工去验证系统功能的过程2.自动化测试能解决什么问题2.1 解决回归测试回归测试：项目在发布新版本之后对项目之前的功能进行验证
+2.2 解决压力测试压力测试">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>软件测试之web自动化测试 | 沙漠之狐</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="沙漠之狐" type="application/atom+xml">
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">沙漠之狐</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>联系人</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">沙漠之狐</div>
+        <div class="logo-desc">
+            
+            有什么胜利可言，挺住意味着一切！
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			联系人
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://statics.sh1a.qingstor.com/2018/09/14/js.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">软件测试之web自动化测试</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                                <span class="chip bg-color">软件测试</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="post-category">
+                                软件测试
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-12-28
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2024-01-04
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3k
+                </div>
+                
+
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="软件测试之web自动化测试"><a href="#软件测试之web自动化测试" class="headerlink" title="软件测试之web自动化测试"></a>软件测试之web自动化测试</h2><h3 id="一-web自动化入门"><a href="#一-web自动化入门" class="headerlink" title="一. web自动化入门"></a>一. <strong>web自动化入门</strong></h3><h4 id="1-什么是自动化测试"><a href="#1-什么是自动化测试" class="headerlink" title="1.什么是自动化测试"></a>1.什么是自动化测试</h4><h5 id="概念：让程序代替人工去验证系统功能的过程"><a href="#概念：让程序代替人工去验证系统功能的过程" class="headerlink" title="概念：让程序代替人工去验证系统功能的过程"></a>概念：让程序代替人工去验证系统功能的过程</h5><h4 id="2-自动化测试能解决什么问题"><a href="#2-自动化测试能解决什么问题" class="headerlink" title="2.自动化测试能解决什么问题"></a>2.自动化测试能解决什么问题</h4><h5 id="2-1-解决回归测试"><a href="#2-1-解决回归测试" class="headerlink" title="2.1 解决回归测试"></a>2.1 解决回归测试</h5><p>回归测试：项目在发布新版本之后对项目之前的功能进行验证</p>
+<h5 id="2-2-解决压力测试"><a href="#2-2-解决压力测试" class="headerlink" title="2.2 解决压力测试"></a>2.2 解决压力测试</h5><p>压力测试：可以理解多用户同时去操作软件，统计软件服务器处理多用户的请求能力</p>
+<h5 id="2-3-解决兼容性测试"><a href="#2-3-解决兼容性测试" class="headerlink" title="2.3 解决兼容性测试"></a>2.3 解决兼容性测试</h5><p>兼容性测试：不同浏览器（浏览器，分辨率，操作系统）</p>
+<h5 id="2-4-提高测试效率，保证产品质量"><a href="#2-4-提高测试效率，保证产品质量" class="headerlink" title="2.4 提高测试效率，保证产品质量"></a>2.4 提高测试效率，保证产品质量</h5><h4 id="3-自动化测试优点"><a href="#3-自动化测试优点" class="headerlink" title="3.自动化测试优点"></a>3.自动化测试优点</h4><h5 id="3-1-在最短时间内运行更多的测试用例"><a href="#3-1-在最短时间内运行更多的测试用例" class="headerlink" title="3.1 在最短时间内运行更多的测试用例"></a>3.1 在最短时间内运行更多的测试用例</h5><h5 id="3-2-自动化脚本可重复运行"><a href="#3-2-自动化脚本可重复运行" class="headerlink" title="3.2 自动化脚本可重复运行"></a>3.2 自动化脚本可重复运行</h5><h5 id="3-3-减少人为错误"><a href="#3-3-减少人为错误" class="headerlink" title="3.3 减少人为错误"></a>3.3 减少人为错误</h5><h5 id="3-4-克服手工测试的局限性"><a href="#3-4-克服手工测试的局限性" class="headerlink" title="3.4 克服手工测试的局限性"></a>3.4 克服手工测试的局限性</h5><h4 id="4-自动化测试分类"><a href="#4-自动化测试分类" class="headerlink" title="4.自动化测试分类"></a>4.自动化测试分类</h4><h5 id="4-1-web自动化测试"><a href="#4-1-web自动化测试" class="headerlink" title="4.1 web自动化测试"></a>4.1 web自动化测试</h5><h5 id="4-2-移动自动化测试"><a href="#4-2-移动自动化测试" class="headerlink" title="4.2 移动自动化测试"></a>4.2 移动自动化测试</h5><h5 id="4-3-接口自动化测试"><a href="#4-3-接口自动化测试" class="headerlink" title="4.3 接口自动化测试"></a>4.3 接口自动化测试</h5><h5 id="4-4-单元自动化测试"><a href="#4-4-单元自动化测试" class="headerlink" title="4.4 单元自动化测试"></a>4.4 单元自动化测试</h5><h4 id="5-什么是web自动化测试"><a href="#5-什么是web自动化测试" class="headerlink" title="5.什么是web自动化测试"></a>5.什么是web自动化测试</h4><h5 id="概念：让程序代替人工自动验证web项目功能的过程"><a href="#概念：让程序代替人工自动验证web项目功能的过程" class="headerlink" title="概念：让程序代替人工自动验证web项目功能的过程"></a>概念：让程序代替人工自动验证web项目功能的过程</h5><h4 id="6-什么web项目适合做自动化测试"><a href="#6-什么web项目适合做自动化测试" class="headerlink" title="6.什么web项目适合做自动化测试"></a>6.什么web项目适合做自动化测试</h4><h5 id="6-1-需求变动不频繁"><a href="#6-1-需求变动不频繁" class="headerlink" title="6.1 需求变动不频繁"></a>6.1 需求变动不频繁</h5><h5 id="6-2-项目周期长"><a href="#6-2-项目周期长" class="headerlink" title="6.2 项目周期长"></a>6.2 项目周期长</h5><h5 id="6-3-项目需要回归测试"><a href="#6-3-项目需要回归测试" class="headerlink" title="6.3 项目需要回归测试"></a>6.3 项目需要回归测试</h5><h4 id="7-web自动化测试所属分类（代码可见度角度）"><a href="#7-web自动化测试所属分类（代码可见度角度）" class="headerlink" title="7.web自动化测试所属分类（代码可见度角度）"></a>7.web自动化测试所属分类（代码可见度角度）</h4><h5 id="7-1-黑盒测试（功能测试）"><a href="#7-1-黑盒测试（功能测试）" class="headerlink" title="7.1 黑盒测试（功能测试）"></a>7.1 黑盒测试（功能测试）</h5><h5 id="7-2-白盒测试（单元测试）"><a href="#7-2-白盒测试（单元测试）" class="headerlink" title="7.2 白盒测试（单元测试）"></a>7.2 白盒测试（单元测试）</h5><h5 id="7-3-灰盒测试（接口测试）"><a href="#7-3-灰盒测试（接口测试）" class="headerlink" title="7.3 灰盒测试（接口测试）"></a>7.3 灰盒测试（接口测试）</h5><h5 id="7-4-web自动化测试属于黑盒测试"><a href="#7-4-web自动化测试属于黑盒测试" class="headerlink" title="7.4 web自动化测试属于黑盒测试"></a>7.4 <strong>web自动化测试属于黑盒测试</strong></h5><h4 id="8-主流的web自动化测试工具"><a href="#8-主流的web自动化测试工具" class="headerlink" title="8.主流的web自动化测试工具"></a>8.主流的web自动化测试工具</h4><h5 id="8-1-QTP是一个商业化的功能测试工具，收费，支持web，桌面张东海测试"><a href="#8-1-QTP是一个商业化的功能测试工具，收费，支持web，桌面张东海测试" class="headerlink" title="8.1 QTP是一个商业化的功能测试工具，收费，支持web，桌面张东海测试"></a>8.1 QTP是一个商业化的功能测试工具，收费，支持web，桌面张东海测试</h5><h5 id="8-2-Selenium是一个开源的web自动化测试工具，免费，主要做功能测试"><a href="#8-2-Selenium是一个开源的web自动化测试工具，免费，主要做功能测试" class="headerlink" title="8.2 Selenium是一个开源的web自动化测试工具，免费，主要做功能测试"></a>8.2 Selenium是一个开源的web自动化测试工具，免费，主要做功能测试</h5><h5 id="8-3-Robot-framework是一个基于Python可扩展的关键字驱动的测试自动化框架"><a href="#8-3-Robot-framework是一个基于Python可扩展的关键字驱动的测试自动化框架" class="headerlink" title="8.3 Robot framework是一个基于Python可扩展的关键字驱动的测试自动化框架"></a>8.3 Robot framework是一个基于Python可扩展的关键字驱动的测试自动化框架</h5><h3 id="二-Selenium-API操作"><a href="#二-Selenium-API操作" class="headerlink" title="二 . Selenium-API操作"></a>二 . Selenium-API操作</h3><h4 id="1-什么是Selenium"><a href="#1-什么是Selenium" class="headerlink" title="1.什么是Selenium"></a>1.什么是Selenium</h4><h5 id="Selenium是一个用于web应用程序的自动化测试工具，中文意思为硒"><a href="#Selenium是一个用于web应用程序的自动化测试工具，中文意思为硒" class="headerlink" title="Selenium是一个用于web应用程序的自动化测试工具，中文意思为硒"></a>Selenium是一个用于web应用程序的自动化测试工具，中文意思为硒</h5><h4 id="2-Selenium特点"><a href="#2-Selenium特点" class="headerlink" title="2. Selenium特点"></a>2. Selenium特点</h4><h5 id="2-1-开源软件，免费"><a href="#2-1-开源软件，免费" class="headerlink" title="2.1 开源软件，免费"></a>2.1 开源软件，免费</h5><h5 id="2-2-跨平台（Linux，windows，mac）"><a href="#2-2-跨平台（Linux，windows，mac）" class="headerlink" title="2.2 跨平台（Linux，windows，mac）"></a>2.2 跨平台（Linux，windows，mac）</h5><h5 id="2-3-支持多种浏览器（谷歌，火狐等）"><a href="#2-3-支持多种浏览器（谷歌，火狐等）" class="headerlink" title="2.3 支持多种浏览器（谷歌，火狐等）"></a>2.3 支持多种浏览器（谷歌，火狐等）</h5><h5 id="2-4-支持多语言（java，python等）"><a href="#2-4-支持多语言（java，python等）" class="headerlink" title="2.4 支持多语言（java，python等）"></a>2.4 支持多语言（java，python等）</h5><h5 id="2-5-成熟稳定，已被谷歌等公司广泛使用"><a href="#2-5-成熟稳定，已被谷歌等公司广泛使用" class="headerlink" title="2.5 成熟稳定，已被谷歌等公司广泛使用"></a>2.5 成熟稳定，已被谷歌等公司广泛使用</h5><h5 id="2-6-功能强大，能够实现类似商业工具的大部分功能，可实现定制化"><a href="#2-6-功能强大，能够实现类似商业工具的大部分功能，可实现定制化" class="headerlink" title="2.6 功能强大，能够实现类似商业工具的大部分功能，可实现定制化"></a>2.6 功能强大，能够实现类似商业工具的大部分功能，可实现定制化</h5><h4 id="3-元素定位相关工具"><a href="#3-元素定位相关工具" class="headerlink" title="3.元素定位相关工具"></a>3.元素定位相关工具</h4><h5 id="3-1-为什么要用元素定位"><a href="#3-1-为什么要用元素定位" class="headerlink" title="3.1 为什么要用元素定位"></a>3.1 为什么要用元素定位</h5><p>要使用web自动化操作元素，必须找到此元素</p>
+<h5 id="3-2-定位工具"><a href="#3-2-定位工具" class="headerlink" title="3.2 定位工具"></a>3.2 定位工具</h5><p>火狐，谷歌</p>
+<h4 id="4-Selenium元素定位方式"><a href="#4-Selenium元素定位方式" class="headerlink" title="4.Selenium元素定位方式"></a>4.Selenium元素定位方式</h4><h5 id="4-1-id（基于元素id属性定位方式）"><a href="#4-1-id（基于元素id属性定位方式）" class="headerlink" title="4.1 id（基于元素id属性定位方式）"></a>4.1 id（基于元素id属性定位方式）</h5><p>说明：id在页面中唯一</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">element<span class="token operator">=</span>driver<span class="token punctuation">.</span><span class="token function">find_element_by_id</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h5 id="4-2-name（基于元素anme属性定位方式）"><a href="#4-2-name（基于元素anme属性定位方式）" class="headerlink" title="4.2 name（基于元素anme属性定位方式）"></a>4.2 name（基于元素anme属性定位方式）</h5><p>说明：元素要有name属性</p>
+<pre class="line-numbers language-none"><code class="language-none">element=driver.find_element_by_name(name)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h5 id="4-3-class-name（基于元素class属性定位方式）"><a href="#4-3-class-name（基于元素class属性定位方式）" class="headerlink" title="4.3 class_name（基于元素class属性定位方式）"></a>4.3 class_name（基于元素class属性定位方式）</h5><p>说明：元素要有class属性</p>
+<pre class="line-numbers language-none"><code class="language-none">element=driver.find_element_by_class_name(class_name)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h5 id="4-4-tag-name（基于元素标签定位方式）"><a href="#4-4-tag-name（基于元素标签定位方式）" class="headerlink" title="4.4 tag_name（基于元素标签定位方式）"></a>4.4 tag_name（基于元素标签定位方式）</h5><p>说明：元素一般有多个，默认返回第一个标签元素</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">element<span class="token operator">=</span>driver<span class="token punctuation">.</span><span class="token function">find_element_by_tag_name</span><span class="token punctuation">(</span>tag_name<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h5 id="4-5-link-text（基于超链接文本定位方式）"><a href="#4-5-link-text（基于超链接文本定位方式）" class="headerlink" title="4.5 link_text（基于超链接文本定位方式）"></a>4.5 link_text（基于超链接文本定位方式）</h5><p>说明：定位超链接标签，只能精准匹配</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">element<span class="token operator">=</span>driver<span class="token punctuation">.</span><span class="token function">find_element_by_link_text</span><span class="token punctuation">(</span>link_text<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h5 id="4-6-partial-link-text（基于超链接文本定位方式）"><a href="#4-6-partial-link-text（基于超链接文本定位方式）" class="headerlink" title="4.6 partial_link_text（基于超链接文本定位方式）"></a>4.6 partial_link_text（基于超链接文本定位方式）</h5><p>说明：定位超链接标签，可以使用精准匹配或模糊匹配，如果使用模糊匹配最好使用能代表唯一的关键字</p>
+<p>如有多个值，默认返回第一个</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">element<span class="token operator">=</span>driver<span class="token punctuation">.</span><span class="token function">find_element_by_partial_link_text</span><span class="token punctuation">(</span>partial_link_text<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h5 id="4-7-XPath（基于元素路径定位方式）"><a href="#4-7-XPath（基于元素路径定位方式）" class="headerlink" title="4.7 XPath（基于元素路径定位方式）"></a>4.7 XPath（基于元素路径定位方式）</h5><h6 id="4-7-1路径"><a href="#4-7-1路径" class="headerlink" title="4.7.1路径"></a>4.7.1路径</h6><p>绝对路径：以单斜杠开头逐级编写，不能跳级，如：/html/body/div/p[1]/input</p>
+<p>相对路径：以双斜杠开头，双斜杠后面跟标签名称，不知标签名称可使用星号代替，如//input，//*</p>
+<h6 id="4-7-2-路径结合属性"><a href="#4-7-2-路径结合属性" class="headerlink" title="4.7.2 路径结合属性"></a>4.7.2 路径结合属性</h6><p>在xpath中，所有属性必须使用@符号修饰，如：//*[@id=’id值’]</p>
+<h6 id="4-7-3-路径结合逻辑（多个属性）"><a href="#4-7-3-路径结合逻辑（多个属性）" class="headerlink" title="4.7.3 路径结合逻辑（多个属性）"></a>4.7.3 路径结合逻辑（多个属性）</h6><p>如：//*[@id=’id值‘and@name=’name’]</p>
+<h6 id="4-7-4-路径结合层级"><a href="#4-7-4-路径结合层级" class="headerlink" title="4.7.4 路径结合层级"></a>4.7.4 路径结合层级</h6><p>如：//*[@id=’父级id值’]/input</p>
+<h6 id="4-7-8-XPath扩展"><a href="#4-7-8-XPath扩展" class="headerlink" title="4.7.8 XPath扩展"></a>4.7.8 XPath扩展</h6><p>//*[text()=”xxxxx”]，定位文本值等于xxxxx的元素</p>
+<p>//*[contains(@attribute，”xxxxx”)]，属性中含有xxxxx的元素</p>
+<p>//*[starts-with(@attribute，”xxxxx”)]，属性以xxxxx开头的元素</p>
+<h5 id="4-8-CSS（基于选择器定位方式）"><a href="#4-8-CSS（基于选择器定位方式）" class="headerlink" title="4.8 CSS（基于选择器定位方式）"></a>4.8 CSS（基于选择器定位方式）</h5><h6 id="4-8-1-CSS定位方法"><a href="#4-8-1-CSS定位方法" class="headerlink" title="4.8.1 CSS定位方法"></a>4.8.1 CSS定位方法</h6><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">element<span class="token operator">=</span>driver<span class="token punctuation">.</span><span class="token function">find_element_by_css_selector</span><span class="token punctuation">(</span>css_selector<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h6 id="4-8-2-CSS定位常用策略"><a href="#4-8-2-CSS定位常用策略" class="headerlink" title="4.8.2 CSS定位常用策略"></a>4.8.2 CSS定位常用策略</h6><p>id选择器</p>
+<p>说明：工具元素id属性来选择</p>
+<p>格式：#id</p>
+<p>举例：#userA&lt;选择id属性值为userA的元素&gt;</p>
+<p>class选择器</p>
+<p>说明：工具元素class属性来选择</p>
+<p>格式：.class</p>
+<p>举例：.telA&lt;选择class属性值为telA的所有元素&gt;</p>
+<p>元素选择器</p>
+<p>说明：工具元素的标签名称来选择</p>
+<p>格式：element</p>
+<p>举例：input&lt;选择所有input元素&gt;</p>
+<p>属性选择器</p>
+<p>说明：工具元素的属性来选择</p>
+<p>格式：[属性名=’属性值’]</p>
+<p>举例：[username=’username’]</p>
+<p>层级选择器</p>
+<p>说明：根据标签层级来选择</p>
+<p>格式：p&gt;input，p input，提示：&gt;与空格的区别，大于号必须为子元素，空格则不用</p>
+<p>举例：p&gt;input[placeholder=’电子邮箱’]</p>
+<h6 id="4-8-3-CSS扩展"><a href="#4-8-3-CSS扩展" class="headerlink" title="4.8.3 CSS扩展"></a>4.8.3 CSS扩展</h6><p>input[type^=’p’]，type属性以p字母开头的元素</p>
+<p>input[type$=’d’]，type属性以d字母结束的元素</p>
+<p>input[type*=’w’]，type属性包含w字母的元素</p>
+<h6 id="4-8-4-Xpath与CSS类似功能对比"><a href="#4-8-4-Xpath与CSS类似功能对比" class="headerlink" title="4.8.4 Xpath与CSS类似功能对比"></a>4.8.4 Xpath与CSS类似功能对比</h6><table>
+<thead>
+<tr>
+<th>定位方式</th>
+<th>Xpath</th>
+<th>CSS</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>元素名</td>
+<td>//input</td>
+<td>input</td>
+</tr>
+<tr>
+<td>id</td>
+<td>//input[@id=’userA’]</td>
+<td>#userA</td>
+</tr>
+<tr>
+<td>class</td>
+<td>//*[@class=’telA’]</td>
+<td>.telA</td>
+</tr>
+<tr>
+<td>属性</td>
+<td>//<em>[text()=”xxxxx”]，//</em>[contains(@attribute，”xxxxx”)]，//*[starts-with(@attribute，”xxxxx”)]</td>
+<td>input[type^=’p’]，input[type$=’d’]，input[type*=’w’]</td>
+</tr>
+</tbody></table>
+<h5 id="4-9-元素操作"><a href="#4-9-元素操作" class="headerlink" title="4.9 元素操作"></a>4.9 元素操作</h5><h6 id="4-9-1-元素常用操作方法"><a href="#4-9-1-元素常用操作方法" class="headerlink" title="4.9.1 元素常用操作方法"></a>4.9.1 元素常用操作方法</h6><p>click()，单击元素</p>
+<p>send_keys(value)，模拟输入</p>
+<p>clear()，清除文本</p>
+<h6 id="4-9-2-浏览器常用操作API"><a href="#4-9-2-浏览器常用操作API" class="headerlink" title="4.9.2 浏览器常用操作API"></a>4.9.2 浏览器常用操作API</h6><p>浏览器窗口最大化</p>
+<pre class="line-numbers language-none"><code class="language-none">driver.maximize_window()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>设置浏览器窗口大小</p>
+<pre class="line-numbers language-none"><code class="language-none">driver.set_window_size(w,h)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>设置浏览器位置</p>
+<pre class="line-numbers language-none"><code class="language-none">driver.set_window_position(x,y)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>浏览器后退操作</p>
+<pre class="line-numbers language-none"><code class="language-none">driver.back()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>浏览器前进操作</p>
+<pre class="line-numbers language-none"><code class="language-none">driver.forward()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>刷新</p>
+<pre class="line-numbers language-none"><code class="language-none">refresh()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>关闭当前窗口</p>
+<pre class="line-numbers language-none"><code class="language-none">close()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>关闭浏览器驱动对象</p>
+<pre class="line-numbers language-none"><code class="language-none">quit()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>获取页面title</p>
+<pre class="line-numbers language-none"><code class="language-none">title<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>获取当前页面url</p>
+<pre class="line-numbers language-none"><code class="language-none">current_url<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h6 id="4-9-3-获取元素信息的常用方法"><a href="#4-9-3-获取元素信息的常用方法" class="headerlink" title="4.9.3 获取元素信息的常用方法"></a>4.9.3 获取元素信息的常用方法</h6><p>获取元素大小</p>
+<pre class="line-numbers language-none"><code class="language-none">size<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>获取元素的文本</p>
+<pre class="line-numbers language-none"><code class="language-none">text<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>获取属性值，传递的参数为元素的属性名</p>
+<pre class="line-numbers language-none"><code class="language-none">get_attribute("xxxx")<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>判断元素是否可见</p>
+<pre class="line-numbers language-none"><code class="language-none">is_displayed()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>判断元素是否可用</p>
+<pre class="line-numbers language-none"><code class="language-none">is_enabled()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>判断元素是否选中，检查复选框或单选框是否被选中</p>
+<pre class="line-numbers language-none"><code class="language-none">is_selected()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="5-0-鼠标和键盘操作API"><a href="#5-0-鼠标和键盘操作API" class="headerlink" title="5.0 鼠标和键盘操作API"></a>5.0 鼠标和键盘操作API</h5><h6 id="5-0-1-鼠标操作方法"><a href="#5-0-1-鼠标操作方法" class="headerlink" title="5.0.1 鼠标操作方法"></a>5.0.1 鼠标操作方法</h6><p>说明：实例化对象，action=ActionChains(driver)</p>
+<p>右击</p>
+<pre class="line-numbers language-none"><code class="language-none">context_click(element)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>双击</p>
+<pre class="line-numbers language-none"><code class="language-none">double_click(element)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>拖动</p>
+<pre class="line-numbers language-none"><code class="language-none">drag_and_drop(source,target)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>悬停</p>
+<pre class="line-numbers language-none"><code class="language-none">move_to_element(element)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>执行</p>
+<pre class="line-numbers language-none"><code class="language-none">perform()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h6 id="5-0-2-键盘操作方法"><a href="#5-0-2-键盘操作方法" class="headerlink" title="5.0.2 键盘操作方法"></a>5.0.2 键盘操作方法</h6><p>send_keys(keys.BACK_SPACE)，删除键</p>
+<p>send_keys(keys.SPACE)，空格键</p>
+<p>send_keys(keys.TAB)，制表键</p>
+<p>send_keys(keys.ESCAPE)，回退键</p>
+<p>send_keys(keys.ENTER)，回车键</p>
+<p>send_keys(keys.CONTROL，’a’)，全选键</p>
+<p>send_keys(keys.CONTROL，’c’)，复制</p>
+<h5 id="5-1-元素等待"><a href="#5-1-元素等待" class="headerlink" title="5.1 元素等待"></a>5.1 元素等待</h5><h5 id="5-1-1-什么是元素等待"><a href="#5-1-1-什么是元素等待" class="headerlink" title="5.1.1 什么是元素等待"></a>5.1.1 什么是元素等待</h5><p>概念：在定位页面元素是如果未找到，会在指定时间内一直等待的过程</p>
+<h5 id="5-1-2-为什么要元素等待"><a href="#5-1-2-为什么要元素等待" class="headerlink" title="5.1.2 为什么要元素等待"></a>5.1.2 为什么要元素等待</h5><p>由于电脑配置或网络原因，在查找元素时，元素代码未在第一时间内被加载出来，抛出未找到元素异常</p>
+<h5 id="5-1-3-元素等待类型"><a href="#5-1-3-元素等待类型" class="headerlink" title="5.1.3 元素等待类型"></a>5.1.3 元素等待类型</h5><p>显示等待：定位元素时，如能定位到元素则直接返回该元素，不触发等待；如果不能定位到该元素，则间隔一段时间后再去定位元素；如果在达到最大时长还没有找到该元素，则抛出元素不存在异常</p>
+<pre class="line-numbers language-none"><code class="language-none">webDriverwait(driver,timeout,poll_frequency=0.5)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>调用方法</p>
+<pre class="line-numbers language-none"><code class="language-none">until(method)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>一般用匿名函数实现</p>
+<pre class="line-numbers language-none"><code class="language-none">webDriverwait(driver,10,1).until(lambda x:find_element_by_id('userA'))<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>说明：显示等待针对单个元素</p>
+<p>隐示等待：定位元素时，如能定位到元素则直接返回该元素，不触发等待；如果不能定位到该元素，则间隔一段时间后再去定位元素；如果在达到最大时长还没有找到该元素，则抛出元素不存在异常</p>
+<pre class="line-numbers language-none"><code class="language-none">driver.implicitly_wait(timeout)，timeout为等待时长，单位为秒<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>说明：隐式等待为全局设置，针对所有元素</p>
+<h5 id="5-2-select选择框"><a href="#5-2-select选择框" class="headerlink" title="5.2 select选择框"></a>5.2 select选择框</h5><h6 id="5-2-1-select下拉选择框操作方法"><a href="#5-2-1-select下拉选择框操作方法" class="headerlink" title="5.2.1 select下拉选择框操作方法"></a>5.2.1 select下拉选择框操作方法</h6><pre class="line-numbers language-none"><code class="language-none">select_by_index(index)，根据option索引来定位，从0开始<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">select_by_value(value)，根据option属性，value值来定位<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">select_by_visible_text</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>，根据option显示文本来定位<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="5-3-警告框"><a href="#5-3-警告框" class="headerlink" title="5.3 警告框"></a>5.3 警告框</h5><h6 id="5-3-1-警告框类型"><a href="#5-3-1-警告框类型" class="headerlink" title="5.3.1 警告框类型"></a>5.3.1 警告框类型</h6><p>alert：警告框</p>
+<p>confirm：确认框</p>
+<p>prompt：提示框</p>
+<h6 id="5-3-2-处理方法"><a href="#5-3-2-处理方法" class="headerlink" title="5.3.2 处理方法"></a>5.3.2 处理方法</h6><p>获取弹出框对象</p>
+<pre class="line-numbers language-none"><code class="language-none">alert=driver.switch_to.alert<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>调用方法</p>
+<pre class="line-numbers language-none"><code class="language-none">alert.text，返回alert/confirm/prompt中的文字信息
+alert.accept()，接受对话框选项
+alert.dismiss()，取消对话框选项<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="5-4-滚动条"><a href="#5-4-滚动条" class="headerlink" title="5.4 滚动条"></a>5.4 滚动条</h5><h6 id="5-4-1-操作方法"><a href="#5-4-1-操作方法" class="headerlink" title="5.4.1 操作方法"></a>5.4.1 操作方法</h6><p>设置javascript脚本操作滚动条</p>
+<pre class="line-numbers language-none"><code class="language-none">js=windows.scrollTo(0,10000)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>selenium调用执行javascript脚本的方法</p>
+<pre class="line-numbers language-none"><code class="language-none">driver.execute_script(js)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h5 id="5-5-切换frame表单"><a href="#5-5-切换frame表单" class="headerlink" title="5.5 切换frame表单"></a>5.5 切换frame表单</h5><p>概念：HTML页面中的一种框架，主要作用是在当前页面中指定区域显示另一页面元素</p>
+<p>常用的frame表单有两种：frame和iframe</p>
+<p>切换frame表单方法</p>
+<pre class="line-numbers language-none"><code class="language-none">driver.switch_to.frame(frame_reference)
+driver.switch_to.default_content()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h5 id="5-6-切换窗口句柄"><a href="#5-6-切换窗口句柄" class="headerlink" title="5.6 切换窗口句柄"></a>5.6 切换窗口句柄</h5><h6 id="5-6-1-如何切换窗口"><a href="#5-6-1-如何切换窗口" class="headerlink" title="5.6.1 如何切换窗口"></a>5.6.1 如何切换窗口</h6><pre class="line-numbers language-none"><code class="language-none">获取当前主窗口句柄：driver.current_window_handle
+获取当前由driver启动的所有窗口句柄：driver.window_handles
+切换窗口：driver.switch_to.window(handle)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="5-7-验证码处理"><a href="#5-7-验证码处理" class="headerlink" title="5.7 验证码处理"></a>5.7 验证码处理</h5><h6 id="5-7-1-验证码处理方式"><a href="#5-7-1-验证码处理方式" class="headerlink" title="5.7.1 验证码处理方式"></a>5.7.1 验证码处理方式</h6><p>去掉验证码（项目在测试环境）</p>
+<p>设置万能验证码（测试环境或线上环境）</p>
+<p>使用验证码识别技术（识别率太低）</p>
+<p>使用cookie解决（推荐使用）</p>
+<h5 id="5-8-cookie介绍"><a href="#5-8-cookie介绍" class="headerlink" title="5.8 cookie介绍"></a>5.8 cookie介绍</h5><h6 id="5-8-1-cookie概念"><a href="#5-8-1-cookie概念" class="headerlink" title="5.8.1 cookie概念"></a>5.8.1 cookie概念</h6><p>cookie由服务器生成，并且保存在用户浏览器上的小文本文件，可以包含用户相关的信息；cookie数据格式为键值对组成；客户端请求服务器，如果服务器需要记录该用户状态，就向客户端浏览器颁发一个cookie数据；当浏览器再次请求该网站时，浏览器把请求的数据和cookie数据一同提交给服务器，服务器检查该cookie以此来辨认用户状态；</p>
+<h6 id="5-8-2-selenium操作cookie"><a href="#5-8-2-selenium操作cookie" class="headerlink" title="5.8.2 selenium操作cookie"></a>5.8.2 selenium操作cookie</h6><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">获取指定cookie，get_cookie</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>，name为cookie的名称
+<span class="token function">获取本网站所有本地cookies，get_cookies</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token function">添加cookie，add_cookie</span><span class="token punctuation">(</span>cookie_dict<span class="token punctuation">)</span>，cookie_dict：一个字典对象，<span class="token string">"name"</span>and<span class="token string">"value"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h5 id="5-9-截屏操作"><a href="#5-9-截屏操作" class="headerlink" title="5.9 截屏操作"></a>5.9 截屏操作</h5><h6 id="5-9-1-窗口截图方法"><a href="#5-9-1-窗口截图方法" class="headerlink" title="5.9.1 窗口截图方法"></a>5.9.1 窗口截图方法</h6><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">driver<span class="token punctuation">.</span><span class="token function">get_screenshot_as_file</span><span class="token punctuation">(</span>imgpath<span class="token punctuation">)</span>，imgpath：图片保存路径<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>多条用例执行失败，会产生多张图片，可以采用时间戳的形式区分</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">driver<span class="token punctuation">.</span><span class="token function">get_screenshot_as_file</span><span class="token punctuation">(</span><span class="token string">"../image/%s.jpg"</span><span class="token operator">%</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span><span class="token function">strftime</span><span class="token punctuation">(</span><span class="token string">"%Y_%m_%d_%H_%M_%S"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+
+
+<h3 id="三-UnitTest框架"><a href="#三-UnitTest框架" class="headerlink" title="三. UnitTest框架"></a>三. UnitTest框架</h3><h4 id="1-1-什么是UnitTest框架"><a href="#1-1-什么是UnitTest框架" class="headerlink" title="1.1 什么是UnitTest框架"></a>1.1 什么是UnitTest框架</h4><h5 id="概念：UnitTest是python自带的一个单元测试框架，可用它来做单元测试"><a href="#概念：UnitTest是python自带的一个单元测试框架，可用它来做单元测试" class="headerlink" title="概念：UnitTest是python自带的一个单元测试框架，可用它来做单元测试"></a>概念：UnitTest是python自带的一个单元测试框架，可用它来做单元测试</h5><h4 id="1-2为什么使用UnitTest框架"><a href="#1-2为什么使用UnitTest框架" class="headerlink" title="1.2为什么使用UnitTest框架"></a>1.2为什么使用UnitTest框架</h4><h5 id="能够组织多个用例去执行"><a href="#能够组织多个用例去执行" class="headerlink" title="能够组织多个用例去执行"></a>能够组织多个用例去执行</h5><h5 id="提供丰富的断言方法"><a href="#提供丰富的断言方法" class="headerlink" title="提供丰富的断言方法"></a>提供丰富的断言方法</h5><h5 id="能够生成测试报告"><a href="#能够生成测试报告" class="headerlink" title="能够生成测试报告"></a>能够生成测试报告</h5><h4 id="1-3-UnitTest核心要素"><a href="#1-3-UnitTest核心要素" class="headerlink" title="1.3 UnitTest核心要素"></a>1.3 UnitTest核心要素</h4><h5 id="1-3-1-TestCase，测试用例"><a href="#1-3-1-TestCase，测试用例" class="headerlink" title="1.3.1 TestCase，测试用例"></a>1.3.1 TestCase，测试用例</h5><h5 id="1-3-2-TestSuite，测试套件"><a href="#1-3-2-TestSuite，测试套件" class="headerlink" title="1.3.2 TestSuite，测试套件"></a>1.3.2 TestSuite，测试套件</h5><h5 id="1-3-3-TextTestRunner，以文本的形式运行测试用例"><a href="#1-3-3-TextTestRunner，以文本的形式运行测试用例" class="headerlink" title="1.3.3 TextTestRunner，以文本的形式运行测试用例"></a>1.3.3 TextTestRunner，以文本的形式运行测试用例</h5><h5 id="1-3-4-TestLoader，批量执行测试用例，搜索指定文件夹内指定字母开头的模块"><a href="#1-3-4-TestLoader，批量执行测试用例，搜索指定文件夹内指定字母开头的模块" class="headerlink" title="1.3.4 TestLoader，批量执行测试用例，搜索指定文件夹内指定字母开头的模块"></a>1.3.4 TestLoader，批量执行测试用例，搜索指定文件夹内指定字母开头的模块</h5><h5 id="1-3-5-Fixture，两个固定函数，一个初始化使用，一个结束时使用"><a href="#1-3-5-Fixture，两个固定函数，一个初始化使用，一个结束时使用" class="headerlink" title="1.3.5 Fixture，两个固定函数，一个初始化使用，一个结束时使用"></a>1.3.5 Fixture，两个固定函数，一个初始化使用，一个结束时使用</h5><h4 id="1-3-TestCase测试用例使用步骤"><a href="#1-3-TestCase测试用例使用步骤" class="headerlink" title="1.3 TestCase测试用例使用步骤"></a>1.3 TestCase测试用例使用步骤</h4><h5 id="1-3-1-导包-import-unittest"><a href="#1-3-1-导包-import-unittest" class="headerlink" title="1.3.1 导包 import unittest"></a>1.3.1 导包 import unittest</h5><h5 id="1-3-2-新建测试用例并继承-unittest-TestCase"><a href="#1-3-2-新建测试用例并继承-unittest-TestCase" class="headerlink" title="1.3.2 新建测试用例并继承 unittest.TestCase"></a>1.3.2 新建测试用例并继承 unittest.TestCase</h5><h5 id="1-3-3-测试方法必须以test字母开头"><a href="#1-3-3-测试方法必须以test字母开头" class="headerlink" title="1.3.3 测试方法必须以test字母开头"></a>1.3.3 测试方法必须以test字母开头</h5><h4 id="1-4-TestSuite使用步骤"><a href="#1-4-TestSuite使用步骤" class="headerlink" title="1.4 TestSuite使用步骤"></a>1.4 TestSuite使用步骤</h4><h5 id="1-4-1-概念：测试套件，多条测试用例集合在一起，就是一个TestSuite"><a href="#1-4-1-概念：测试套件，多条测试用例集合在一起，就是一个TestSuite" class="headerlink" title="1.4.1 概念：测试套件，多条测试用例集合在一起，就是一个TestSuite"></a>1.4.1 概念：测试套件，多条测试用例集合在一起，就是一个TestSuite</h5><pre class="line-numbers language-none"><code class="language-none">实例化：suite=unittest.TestSuite()
+添加用例：suite.addTest(CLassName("MethodName"))
+添加扩展：suite.addTest(unittest.makeSuite(ClassName))
+提示：TestSuite需要配合TestRunner才能被执行<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="1-5-TestLoader类使用方法"><a href="#1-5-TestLoader类使用方法" class="headerlink" title="1.5 TestLoader类使用方法"></a>1.5 TestLoader类使用方法</h4><h3 id="四-PO模式"><a href="#四-PO模式" class="headerlink" title="四. PO模式"></a>四. PO模式</h3><h3 id="五-数据驱动"><a href="#五-数据驱动" class="headerlink" title="五. 数据驱动"></a>五. 数据驱动</h3><h3 id="六-日志收集"><a href="#六-日志收集" class="headerlink" title="六. 日志收集"></a>六. 日志收集</h3><h3 id="七-项目实战"><a href="#七-项目实战" class="headerlink" title="七. 项目实战"></a>七. 项目实战</h3>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">jochenxiao</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://codingxboy.github.io/2023/12/28/ruan-jian-ce-shi/ruan-jian-ce-shi-zhi-web-zi-dong-hua-ce-shi/ruan-jian-ce-shi-zhi-web-zi-dong-hua-ce-shi/">https://codingxboy.github.io/2023/12/28/ruan-jian-ce-shi/ruan-jian-ce-shi-zhi-web-zi-dong-hua-ce-shi/ruan-jian-ce-shi-zhi-web-zi-dong-hua-ce-shi/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">jochenxiao</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                                    <span class="chip bg-color">软件测试</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">扫码关注抖音号</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的关注是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">抖音号</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="抖音号二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2024/01/04/ruan-jian-ce-shi/ruan-jian-ce-shi-ji-chu-li-lun/ruan-jian-ce-shi-ji-chu-li-lun/">
+                    <div class="card-image">
+                        
+                        <img src="https://statics.sh1a.qingstor.com/2018/09/14/js.jpg" class="responsive-img" alt="软件测试基础理论">
+                        
+                        <span class="card-title">软件测试基础理论</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-01-04
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="post-category">
+                                    软件测试
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">软件测试</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/11/21/hou-duan/java/java-ji-chu-zhi-shi-da-gang/">
+                    <div class="card-image">
+                        
+                        <img src="https://statics.sh1a.qingstor.com/2018/11/13/java8-1.jpg" class="responsive-img" alt="Java基础知识大纲">
+                        
+                        <span class="card-title">Java基础知识大纲</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
+                                    后端
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2024</span>
+            
+            <a href="/about" target="_blank">JochenXiao</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+                <span id="translate">|&nbsp;繁/简：</span><a id="translateLink" href="javascript:translatePage();">繁</a>
+            
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">64.9k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2019";
+                        var startMonth = "6";
+                        var startDate = "28";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+        <script type="text/javascript" src="/js/tw_cn.js"></script>
+        <script type="text/javascript">
+          var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
+          var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+          var cookieDomain = "https://codingxboy.github.io"; //Cookie地址, 一定要设定, 通常为你的网址
+          var msgToTraditionalChinese = "繁"; //此处可以更改为你想要显示的文字
+          var msgToSimplifiedChinese = "简"; //同上，但两处均不建议更改
+          var translateButtonId = "translateLink"; //默认互换id
+          translateInitilization();
+        </script>
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+        <script src="//code.tidio.co/yfadw38o0ba9cq3sjdhswugzbq0of3fw.js"></script>
+        <script>
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);
+                function change_Tidio() {
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                }
+            });
+        </script>
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

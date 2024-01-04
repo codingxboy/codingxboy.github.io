@@ -1,0 +1,1248 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="软件测试基础理论, 沙漠之狐，jochen">
+    <meta name="description" content="软件测试基础理论一.认识软件测试1.什么是软件软件：控制计算机硬件工作的工具
+2.软件基本组成软件分为应用软件和系统软件
+3.软件产生过程需求产生-&amp;gt;需求文档-&amp;gt;设计效果图-&amp;gt;产品开发-&amp;gt;产品测试-&amp;gt;部署上线
+">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>软件测试基础理论 | 沙漠之狐</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="沙漠之狐" type="application/atom+xml">
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">沙漠之狐</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>联系人</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">沙漠之狐</div>
+        <div class="logo-desc">
+            
+            有什么胜利可言，挺住意味着一切！
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			联系人
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://statics.sh1a.qingstor.com/2018/09/14/js.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">软件测试基础理论</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                                <span class="chip bg-color">软件测试</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="post-category">
+                                软件测试
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-01-04
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2024-01-04
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.3k
+                </div>
+                
+
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="软件测试基础理论"><a href="#软件测试基础理论" class="headerlink" title="软件测试基础理论"></a>软件测试基础理论</h2><h3 id="一-认识软件测试"><a href="#一-认识软件测试" class="headerlink" title="一.认识软件测试"></a>一.认识软件测试</h3><h4 id="1-什么是软件"><a href="#1-什么是软件" class="headerlink" title="1.什么是软件"></a>1.什么是软件</h4><p>软件：控制计算机硬件工作的工具</p>
+<h4 id="2-软件基本组成"><a href="#2-软件基本组成" class="headerlink" title="2.软件基本组成"></a>2.软件基本组成</h4><p>软件分为应用软件和系统软件</p>
+<h4 id="3-软件产生过程"><a href="#3-软件产生过程" class="headerlink" title="3.软件产生过程"></a>3.软件产生过程</h4><p>需求产生-&gt;需求文档-&gt;设计效果图-&gt;产品开发-&gt;产品测试-&gt;部署上线</p>
+<h4 id="4-什么是软件测试"><a href="#4-什么是软件测试" class="headerlink" title="4.什么是软件测试"></a>4.什么是软件测试</h4><p>软件测试：使用技术手段验证软件是否满足使用需求。</p>
+<h4 id="5-软件测试目的"><a href="#5-软件测试目的" class="headerlink" title="5.软件测试目的"></a>5.软件测试目的</h4><p>目的：减少软件缺陷（bug），保障软件质量。</p>
+<h3 id="二-测试的主流技能"><a href="#二-测试的主流技能" class="headerlink" title="二.测试的主流技能"></a>二.测试的主流技能</h3><h4 id="1-功能测试"><a href="#1-功能测试" class="headerlink" title="1.功能测试"></a>1.功能测试</h4><h5 id="1-1-功能测试：验证程序的功能是否满足需求。"><a href="#1-1-功能测试：验证程序的功能是否满足需求。" class="headerlink" title="1.1 功能测试：验证程序的功能是否满足需求。"></a>1.1 功能测试：验证程序的功能是否满足需求。</h5><h4 id="2-自动化测试"><a href="#2-自动化测试" class="headerlink" title="2.自动化测试"></a>2.自动化测试</h4><h5 id="2-1-自动化测试：使用代码或工具代替手工，对项目进行测试。"><a href="#2-1-自动化测试：使用代码或工具代替手工，对项目进行测试。" class="headerlink" title="2.1 自动化测试：使用代码或工具代替手工，对项目进行测试。"></a>2.1 自动化测试：使用代码或工具代替手工，对项目进行测试。</h5><h4 id="3-接口测试"><a href="#3-接口测试" class="headerlink" title="3.接口测试"></a>3.接口测试</h4><h5 id="3-1-接口测试：使用代码或工具对服务端提供的接口进行测试。"><a href="#3-1-接口测试：使用代码或工具对服务端提供的接口进行测试。" class="headerlink" title="3.1 接口测试：使用代码或工具对服务端提供的接口进行测试。"></a>3.1 接口测试：使用代码或工具对服务端提供的接口进行测试。</h5><h4 id="4-性能测试"><a href="#4-性能测试" class="headerlink" title="4.性能测试"></a>4.性能测试</h4><h5 id="4-1-性能测试：模拟多人使用软件，查找服务器缺陷。"><a href="#4-1-性能测试：模拟多人使用软件，查找服务器缺陷。" class="headerlink" title="4.1 性能测试：模拟多人使用软件，查找服务器缺陷。"></a>4.1 性能测试：模拟多人使用软件，查找服务器缺陷。</h5><h3 id="三-常见的测试分类"><a href="#三-常见的测试分类" class="headerlink" title="三.常见的测试分类"></a>三.常见的测试分类</h3><h4 id="1-按测试阶段划分"><a href="#1-按测试阶段划分" class="headerlink" title="1.按测试阶段划分"></a>1.按测试阶段划分</h4><h5 id="1-1-单元测试"><a href="#1-1-单元测试" class="headerlink" title="1.1 单元测试"></a>1.1 单元测试</h5><p>单元测试：针对程序源代码进行测试</p>
+<h5 id="1-2-集成测试"><a href="#1-2-集成测试" class="headerlink" title="1.2 集成测试"></a>1.2 集成测试</h5><p>集成测试：针对程序接口进行测试</p>
+<h5 id="1-3-系统测试"><a href="#1-3-系统测试" class="headerlink" title="1.3 系统测试"></a>1.3 系统测试</h5><p>系统测试：针对程序功能，非功能进行测试，包括功能，兼容，文档等测试</p>
+<h5 id="1-4-验收测试"><a href="#1-4-验收测试" class="headerlink" title="1.4 验收测试"></a>1.4 验收测试</h5><p>验收测试：使用不同用户（主要分为内测，公测）进行测试</p>
+<h4 id="2-按代码可见度划分"><a href="#2-按代码可见度划分" class="headerlink" title="2. 按代码可见度划分"></a>2. 按代码可见度划分</h4><h5 id="2-1-黑盒测试"><a href="#2-1-黑盒测试" class="headerlink" title="2.1 黑盒测试"></a>2.1 黑盒测试</h5><p>不关注源代码，针对程序UI功能进行测试（即系统测试）</p>
+<h5 id="2-2-灰盒测试"><a href="#2-2-灰盒测试" class="headerlink" title="2.2 灰盒测试"></a>2.2 灰盒测试</h5><p>针对程序部分源代码进行测试（即集成测试）</p>
+<h5 id="2-3-白盒测试"><a href="#2-3-白盒测试" class="headerlink" title="2.3 白盒测试"></a>2.3 白盒测试</h5><p>针对程序源代码进行测试（即单元测试）</p>
+<h3 id="四-测试模型"><a href="#四-测试模型" class="headerlink" title="四.测试模型"></a>四.测试模型</h3><h4 id="1-质量模型"><a href="#1-质量模型" class="headerlink" title="1. 质量模型"></a>1. 质量模型</h4><h5 id="1-1-功能性"><a href="#1-1-功能性" class="headerlink" title="1.1 功能性"></a>1.1 <strong>功能性</strong></h5><h5 id="1-2-性能"><a href="#1-2-性能" class="headerlink" title="1.2 性能"></a>1.2 <strong>性能</strong></h5><h5 id="1-3-兼容性"><a href="#1-3-兼容性" class="headerlink" title="1.3 兼容性"></a>1.3 <strong>兼容性</strong></h5><h5 id="1-4-易用性"><a href="#1-4-易用性" class="headerlink" title="1.4 易用性"></a>1.4 <strong>易用性</strong></h5><h5 id="1-5-安全性"><a href="#1-5-安全性" class="headerlink" title="1.5 安全性"></a>1.5 <strong>安全性</strong></h5><h5 id="1-6-可靠性"><a href="#1-6-可靠性" class="headerlink" title="1.6 可靠性"></a>1.6 可靠性</h5><h5 id="1-7-可移植性"><a href="#1-7-可移植性" class="headerlink" title="1.7 可移植性"></a>1.7 可移植性</h5><h5 id="1-8-可维护性"><a href="#1-8-可维护性" class="headerlink" title="1.8 可维护性"></a>1.8 可维护性</h5><h3 id="五-软件测试流程"><a href="#五-软件测试流程" class="headerlink" title="五.软件测试流程"></a>五.软件测试流程</h3><h4 id="1-需求评审"><a href="#1-需求评审" class="headerlink" title="1.需求评审"></a>1.需求评审</h4><h5 id="确保各部门需求理解一致"><a href="#确保各部门需求理解一致" class="headerlink" title="确保各部门需求理解一致"></a>确保各部门需求理解一致</h5><h4 id="2-测试计划"><a href="#2-测试计划" class="headerlink" title="2.测试计划"></a>2.测试计划</h4><h5 id="测什么，谁来测，怎么测"><a href="#测什么，谁来测，怎么测" class="headerlink" title="测什么，谁来测，怎么测"></a>测什么，谁来测，怎么测</h5><h4 id="3-用例设计"><a href="#3-用例设计" class="headerlink" title="3.用例设计"></a>3.用例设计</h4><h5 id="验证项目是否符合需求的操作文档"><a href="#验证项目是否符合需求的操作文档" class="headerlink" title="验证项目是否符合需求的操作文档"></a>验证项目是否符合需求的操作文档</h5><h4 id="4-用例执行"><a href="#4-用例执行" class="headerlink" title="4.用例执行"></a>4.用例执行</h4><h5 id="项目模块开发完成开始执行用例文档实施测试"><a href="#项目模块开发完成开始执行用例文档实施测试" class="headerlink" title="项目模块开发完成开始执行用例文档实施测试"></a>项目模块开发完成开始执行用例文档实施测试</h5><h4 id="5-缺陷管理"><a href="#5-缺陷管理" class="headerlink" title="5.缺陷管理"></a>5.缺陷管理</h4><h5 id="对缺陷进行管理的过程"><a href="#对缺陷进行管理的过程" class="headerlink" title="对缺陷进行管理的过程"></a>对缺陷进行管理的过程</h5><h4 id="6-测试报告"><a href="#6-测试报告" class="headerlink" title="6.测试报告"></a>6.测试报告</h4><h5 id="实施测试的结果文档"><a href="#实施测试的结果文档" class="headerlink" title="实施测试的结果文档"></a>实施测试的结果文档</h5><h3 id="六-测试用例"><a href="#六-测试用例" class="headerlink" title="六.测试用例"></a>六.测试用例</h3><h4 id="1-测试用例："><a href="#1-测试用例：" class="headerlink" title="1.测试用例："></a>1.测试用例：</h4><h5 id="是为测试项目而设计的执行文档"><a href="#是为测试项目而设计的执行文档" class="headerlink" title="是为测试项目而设计的执行文档"></a>是为测试项目而设计的执行文档</h5><h4 id="2-测试用例的作用"><a href="#2-测试用例的作用" class="headerlink" title="2.测试用例的作用"></a>2.测试用例的作用</h4><h5 id="2-1-防止漏测"><a href="#2-1-防止漏测" class="headerlink" title="2.1 防止漏测"></a>2.1 防止漏测</h5><h5 id="2-2-实施测试的标准"><a href="#2-2-实施测试的标准" class="headerlink" title="2.2 实施测试的标准"></a>2.2 实施测试的标准</h5><h4 id="3-用例设计编写格式"><a href="#3-用例设计编写格式" class="headerlink" title="3.用例设计编写格式"></a>3.用例设计编写格式</h4><h5 id="3-1-用例编号：项目-模块-编号"><a href="#3-1-用例编号：项目-模块-编号" class="headerlink" title="3.1 用例编号：项目_模块_编号"></a>3.1 用例编号：<code>项目_模块_编号</code></h5><h5 id="3-2-用例标题：预测结果（测试点）"><a href="#3-2-用例标题：预测结果（测试点）" class="headerlink" title="3.2 用例标题：预测结果（测试点）"></a>3.2 用例标题：预测结果（测试点）</h5><h5 id="3-3-模块-项目：所属项目或模块"><a href="#3-3-模块-项目：所属项目或模块" class="headerlink" title="3.3 模块/项目：所属项目或模块"></a>3.3 模块/项目：所属项目或模块</h5><h5 id="3-4-优先级：表示用例的重要程度或者影响力P0-P4-P0最高"><a href="#3-4-优先级：表示用例的重要程度或者影响力P0-P4-P0最高" class="headerlink" title="3.4 优先级：表示用例的重要程度或者影响力P0~P4(P0最高)"></a>3.4 优先级：表示用例的重要程度或者影响力P0~P4(P0最高)</h5><h5 id="3-5-前置条件：要执行此条用例，有哪些前置操作"><a href="#3-5-前置条件：要执行此条用例，有哪些前置操作" class="headerlink" title="3.5 前置条件：要执行此条用例，有哪些前置操作"></a>3.5 前置条件：要执行此条用例，有哪些前置操作</h5><h5 id="3-6-测试步骤：描述操作步骤"><a href="#3-6-测试步骤：描述操作步骤" class="headerlink" title="3.6 测试步骤：描述操作步骤"></a>3.6 测试步骤：描述操作步骤</h5><h5 id="3-7-测试数据：操作的数据，没有的话可以为空"><a href="#3-7-测试数据：操作的数据，没有的话可以为空" class="headerlink" title="3.7 测试数据：操作的数据，没有的话可以为空"></a>3.7 测试数据：操作的数据，没有的话可以为空</h5><h5 id="3-8-预期结果：期望达到的结果"><a href="#3-8-预期结果：期望达到的结果" class="headerlink" title="3.8 预期结果：期望达到的结果"></a>3.8 预期结果：期望达到的结果</h5><h4 id="4-等价类划分法-对穷举场景设计测试点"><a href="#4-等价类划分法-对穷举场景设计测试点" class="headerlink" title="4.等价类划分法(对穷举场景设计测试点)"></a>4.<strong>等价类划分法(对穷举场景设计测试点)</strong></h4><h5 id="4-1-说明：在所有测试数据中，具有某种共同特征的数据集合进行划分"><a href="#4-1-说明：在所有测试数据中，具有某种共同特征的数据集合进行划分" class="headerlink" title="4.1 说明：在所有测试数据中，具有某种共同特征的数据集合进行划分"></a>4.1 说明：在所有测试数据中，具有某种共同特征的数据集合进行划分</h5><h5 id="4-2-分类：有效等价类：满足需求的数据集合；无效等价类：不满足需求的数据集合"><a href="#4-2-分类：有效等价类：满足需求的数据集合；无效等价类：不满足需求的数据集合" class="headerlink" title="4.2 分类：有效等价类：满足需求的数据集合；无效等价类：不满足需求的数据集合"></a>4.2 分类：有效等价类：满足需求的数据集合；无效等价类：不满足需求的数据集合</h5><h5 id="4-3-步骤：明确需求；确定有效和无效等价类；提取数据编写测试用例；"><a href="#4-3-步骤：明确需求；确定有效和无效等价类；提取数据编写测试用例；" class="headerlink" title="4.3 步骤：明确需求；确定有效和无效等价类；提取数据编写测试用例；"></a>4.3 步骤：明确需求；确定有效和无效等价类；提取数据编写测试用例；</h5><h5 id="4-4-适用场景：针对有大量数据测试输入，但是没法穷举测试的地方，如输入框，下拉列表，单选复选框，典型代表为页面的输入框类测试"><a href="#4-4-适用场景：针对有大量数据测试输入，但是没法穷举测试的地方，如输入框，下拉列表，单选复选框，典型代表为页面的输入框类测试" class="headerlink" title="4.4 适用场景：针对有大量数据测试输入，但是没法穷举测试的地方，如输入框，下拉列表，单选复选框，典型代表为页面的输入框类测试"></a>4.4 适用场景：针对有大量数据测试输入，但是没法穷举测试的地方，如输入框，下拉列表，单选复选框，典型代表为页面的输入框类测试</h5><h5 id="4-5-重点：正向用例：一条尽可能覆盖多条；逆向用例：每一条数据，都是一条单独用例；"><a href="#4-5-重点：正向用例：一条尽可能覆盖多条；逆向用例：每一条数据，都是一条单独用例；" class="headerlink" title="4.5 重点：正向用例：一条尽可能覆盖多条；逆向用例：每一条数据，都是一条单独用例；"></a>4.5 <strong>重点</strong>：正向用例：一条尽可能覆盖多条；逆向用例：每一条数据，都是一条单独用例；</h5><h4 id="5-边界值分析法-对限定边界规则设计测试点"><a href="#5-边界值分析法-对限定边界规则设计测试点" class="headerlink" title="5.边界值分析法(对限定边界规则设计测试点)"></a>5.<strong>边界值分析法(对限定边界规则设计测试点)</strong></h4><h5 id="5-1-边界范围节点"><a href="#5-1-边界范围节点" class="headerlink" title="5.1 边界范围节点"></a>5.1 边界范围节点</h5><p>选取正好等于，刚好大于，刚好小于边界的值作为测试数据；</p>
+<p>上点：边界上的点（正好等于）</p>
+<p>离点：距离上点最近的点（刚好大于，刚好小于）</p>
+<p>内点：范围内的点（区间范围内的数据）</p>
+<h5 id="5-2-边界值法设计用例步骤"><a href="#5-2-边界值法设计用例步骤" class="headerlink" title="5.2 边界值法设计用例步骤"></a>5.2 边界值法设计用例步骤</h5><p>5.2.1 明确需求</p>
+<p>5.2.2 确定有效和无效等价</p>
+<p>5.2.3 确定边界范围值</p>
+<p>5.2.4 提取数据编写测试用例</p>
+<p>优化：开内闭外（开区间选包含的点，闭区间选不包含的点）</p>
+<h5 id="5-3-边界值法适用场景"><a href="#5-3-边界值法适用场景" class="headerlink" title="5.3 边界值法适用场景"></a>5.3 边界值法适用场景</h5><p>在等价类的基础上针对有边界范围的测试数据输入的地方（重点关注边界）</p>
+<p>常见词语：大小，重量，尺寸，最大，最小，至多，至少等词语</p>
+<p>有边界范围的输入框类测试</p>
+<h4 id="6-判定表法-对多条件依赖关系进行设计测试点"><a href="#6-判定表法-对多条件依赖关系进行设计测试点" class="headerlink" title="6.判定表法(对多条件依赖关系进行设计测试点)"></a>6.<strong>判定表法(对多条件依赖关系进行设计测试点)</strong></h4><h5 id="6-1-判断表法的引用"><a href="#6-1-判断表法的引用" class="headerlink" title="6.1 判断表法的引用"></a>6.1 判断表法的引用</h5><p>等价类边界值分析法主要关注单个输入类条件的测试，并未考虑输入条件之间的各种组合，输入条件与输出结果之间有相互制约关系的测试</p>
+<h5 id="6-2-判定表定义及组成部分"><a href="#6-2-判定表定义及组成部分" class="headerlink" title="6.2 判定表定义及组成部分"></a>6.2 判定表定义及组成部分</h5><p>定义：是一种以表格形式表达多条件逻辑判断的工具</p>
+<p>条件桩：列出问题中的所有条件，列出条件的次序无关紧要</p>
+<p>动作桩：列出问题中可能采取的操作，操作的排列顺序没有约束</p>
+<p>条件项：列出条件对应的数值，所有可能情况下的真假值</p>
+<p>动作项：列出条件项的各种取值情况下应该采取的动作结果</p>
+<p>规则：判定表中贯穿条件项和动作项的一列就是一条规则</p>
+<p>假设有N个条件，每个条件的取值有两个，全组含有2的N次方种规则</p>
+<h4 id="6-3-判定表法设计用例步骤"><a href="#6-3-判定表法设计用例步骤" class="headerlink" title="6.3 判定表法设计用例步骤"></a>6.3 判定表法设计用例步骤</h4><h5 id="6-3-1-明确需求"><a href="#6-3-1-明确需求" class="headerlink" title="6.3.1 明确需求"></a>6.3.1 明确需求</h5><h5 id="6-3-2-画出判定表"><a href="#6-3-2-画出判定表" class="headerlink" title="6.3.2 画出判定表"></a>6.3.2 画出判定表</h5><p>列出条件桩和动作桩</p>
+<p>填写条件项，对条件进行组合</p>
+<p>根据条件项的组合确定动作项</p>
+<p>简化合并相似规则</p>
+<h5 id="6-3-3-根据规则编写测试用例"><a href="#6-3-3-根据规则编写测试用例" class="headerlink" title="6.3.3 根据规则编写测试用例"></a>6.3.3 根据规则编写测试用例</h5><h4 id="6-4-判定表方法使用场景"><a href="#6-4-判定表方法使用场景" class="headerlink" title="6.4 判定表方法使用场景"></a>6.4 判定表方法使用场景</h4><h5 id="6-4-1-有多个输入条件，多个输出结果，输入条件之间有组合关系，输入条件和输出结果之间有依赖关系"><a href="#6-4-1-有多个输入条件，多个输出结果，输入条件之间有组合关系，输入条件和输出结果之间有依赖关系" class="headerlink" title="6.4.1 有多个输入条件，多个输出结果，输入条件之间有组合关系，输入条件和输出结果之间有依赖关系"></a>6.4.1 有多个输入条件，多个输出结果，输入条件之间有组合关系，输入条件和输出结果之间有依赖关系</h5><h5 id="6-4-2-判定表一般适用于条件组合数量较少的情况如4个条件以下"><a href="#6-4-2-判定表一般适用于条件组合数量较少的情况如4个条件以下" class="headerlink" title="6.4.2 判定表一般适用于条件组合数量较少的情况如4个条件以下"></a>6.4.2 判定表一般适用于条件组合数量较少的情况如4个条件以下</h5><h4 id="7-场景法-对于项目业务进行设计测试点"><a href="#7-场景法-对于项目业务进行设计测试点" class="headerlink" title="7.场景法(对于项目业务进行设计测试点)"></a>7.<strong>场景法(对于项目业务进行设计测试点)</strong></h4><h5 id="7-1-流程图"><a href="#7-1-流程图" class="headerlink" title="7.1 流程图"></a>7.1 流程图</h5><p>使用标准图形和箭头来表达程序或业务的走向</p>
+<h5 id="7-2-介绍"><a href="#7-2-介绍" class="headerlink" title="7.2 介绍"></a>7.2 介绍</h5><h5 id="7-3-使用场景"><a href="#7-3-使用场景" class="headerlink" title="7.3 使用场景"></a>7.3 使用场景</h5><p>根据实际的应用场景，来测试业务用例，可以用场景法</p>
+<h5 id="7-4-案例"><a href="#7-4-案例" class="headerlink" title="7.4 案例"></a>7.4 案例</h5><p>ATM机银行取款</p>
+<h4 id="8-软件缺陷"><a href="#8-软件缺陷" class="headerlink" title="8.软件缺陷"></a>8.<strong>软件缺陷</strong></h4><h5 id="8-1-软件缺陷的判定标准"><a href="#8-1-软件缺陷的判定标准" class="headerlink" title="8.1 软件缺陷的判定标准"></a>8.1 软件缺陷的判定标准</h5><h6 id="8-1-1-缺陷定义"><a href="#8-1-1-缺陷定义" class="headerlink" title="8.1.1 缺陷定义"></a>8.1.1 缺陷定义</h6><p>软件在使用过程中存在的任何问题都叫软件的缺陷，简称bug</p>
+<h6 id="8-1-2-缺陷判定标准"><a href="#8-1-2-缺陷判定标准" class="headerlink" title="8.1.2 缺陷判定标准"></a>8.1.2 缺陷判定标准</h6><p>软件未实现需求说明书中明确要求的功能，少功能</p>
+<p>软件出现了需求说明书中指明不应该出现的错误，功能错误</p>
+<p>软件实现的功能超出需求说明书指明的范围，多功能</p>
+<p>软件未实现需求说明书中虽未明确指明但应该实现的需求，隐形功能错误</p>
+<p>软件难以理解，不易使用，运行缓慢，用户体验不好，不易使用</p>
+<h6 id="8-1-3-缺陷产生原因"><a href="#8-1-3-缺陷产生原因" class="headerlink" title="8.1.3 缺陷产生原因"></a>8.1.3 缺陷产生原因</h6><p>需求阶段：需求描述不易理解，有歧义，错误等</p>
+<p>设计阶段：设计文档存在错误或缺陷</p>
+<p>编码阶段：代码出现错误</p>
+<p>运行阶段：软硬件系统本身故障导致软件缺陷</p>
+<h6 id="8-1-4-缺陷核心内容"><a href="#8-1-4-缺陷核心内容" class="headerlink" title="8.1.4 缺陷核心内容"></a>8.1.4 缺陷核心内容</h6><p>缺陷的标题，缺陷的预置条件，缺陷的复现步骤，缺陷的预期结果，缺陷的实际结果，缺陷的必要附件</p>
+<h6 id="8-1-5-缺陷提交要素"><a href="#8-1-5-缺陷提交要素" class="headerlink" title="8.1.5 缺陷提交要素"></a>8.1.5 缺陷提交要素</h6><p>缺陷报告编号，严重程度，缺陷优先级，bug类型，缺陷状态</p>
+<h6 id="8-1-6-缺陷类型"><a href="#8-1-6-缺陷类型" class="headerlink" title="8.1.6 缺陷类型"></a>8.1.6 缺陷类型</h6><p>功能错误，错误界面，兼容性，数据，易用性，改进建议，架构</p>
+<h6 id="8-1-7-软件缺陷的生命周期"><a href="#8-1-7-软件缺陷的生命周期" class="headerlink" title="8.1.7 软件缺陷的生命周期"></a>8.1.7 软件缺陷的生命周期</h6><p>需求规格说明-&gt;设计-&gt;编码-&gt;测试-&gt;故障分类-&gt;故障隔离-&gt;故障解决</p>
+<h5 id="8-2-缺陷的管理流程"><a href="#8-2-缺陷的管理流程" class="headerlink" title="8.2 缺陷的管理流程"></a>8.2 缺陷的管理流程</h5><p><img src="C:\Users\XZQS2\AppData\Roaming\Typora\typora-user-images\image-20231225160616883.png" alt="image-20231225160616883"></p>
+<h5 id="8-3-缺陷编写"><a href="#8-3-缺陷编写" class="headerlink" title="8.3 缺陷编写"></a>8.3 缺陷编写</h5><table>
+<thead>
+<tr>
+<th>缺陷ID</th>
+<th>缺陷标题</th>
+<th>缺陷状态</th>
+<th>严重程度</th>
+<th>优先级</th>
+<th>所属模块</th>
+<th>缺陷描述</th>
+<th>附件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>bug01</td>
+<td>正常下单成功后支付失败</td>
+<td>new</td>
+<td>P0</td>
+<td>P0</td>
+<td>ego核心业务</td>
+<td>1.打开小程序；2.选中商品添加购物车进行下单；3.在订单详情点击去付款；预期结果：能够调用微信支付；实际结果：无响应；</td>
+<td>/</td>
+</tr>
+</tbody></table>
+<h5 id="8-3-excel管理缺陷"><a href="#8-3-excel管理缺陷" class="headerlink" title="8.3 excel管理缺陷"></a>8.3 excel管理缺陷</h5><h5 id="8-4-工具管理缺陷"><a href="#8-4-工具管理缺陷" class="headerlink" title="8.4 工具管理缺陷"></a>8.4 工具管理缺陷</h5><p>禅道</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">jochenxiao</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://codingxboy.github.io/2024/01/04/ruan-jian-ce-shi/ruan-jian-ce-shi-ji-chu-li-lun/ruan-jian-ce-shi-ji-chu-li-lun/">https://codingxboy.github.io/2024/01/04/ruan-jian-ce-shi/ruan-jian-ce-shi-ji-chu-li-lun/ruan-jian-ce-shi-ji-chu-li-lun/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">jochenxiao</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                                    <span class="chip bg-color">软件测试</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">扫码关注抖音号</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的关注是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">抖音号</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="抖音号二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2024/01/04/ruan-jian-ce-shi/ruan-jian-ce-shi-ji-chu-li-lun/ruan-jian-ce-shi-ji-chu-li-lun/">
+                    <div class="card-image">
+                        
+                        <img src="https://statics.sh1a.qingstor.com/2018/09/14/js.jpg" class="responsive-img" alt="软件测试基础理论">
+                        
+                        <span class="card-title">软件测试基础理论</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-04
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="post-category">
+                                    软件测试
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">软件测试</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/12/28/ruan-jian-ce-shi/ruan-jian-ce-shi-zhi-web-zi-dong-hua-ce-shi/ruan-jian-ce-shi-zhi-web-zi-dong-hua-ce-shi/">
+                    <div class="card-image">
+                        
+                        <img src="https://statics.sh1a.qingstor.com/2018/09/14/js.jpg" class="responsive-img" alt="软件测试之web自动化测试">
+                        
+                        <span class="card-title">软件测试之web自动化测试</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="post-category">
+                                    软件测试
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">软件测试</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2024</span>
+            
+            <a href="/about" target="_blank">JochenXiao</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+                <span id="translate">|&nbsp;繁/简：</span><a id="translateLink" href="javascript:translatePage();">繁</a>
+            
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">64.9k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2019";
+                        var startMonth = "6";
+                        var startDate = "28";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+        <script type="text/javascript" src="/js/tw_cn.js"></script>
+        <script type="text/javascript">
+          var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
+          var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+          var cookieDomain = "https://codingxboy.github.io"; //Cookie地址, 一定要设定, 通常为你的网址
+          var msgToTraditionalChinese = "繁"; //此处可以更改为你想要显示的文字
+          var msgToSimplifiedChinese = "简"; //同上，但两处均不建议更改
+          var translateButtonId = "translateLink"; //默认互换id
+          translateInitilization();
+        </script>
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+        <script src="//code.tidio.co/yfadw38o0ba9cq3sjdhswugzbq0of3fw.js"></script>
+        <script>
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);
+                function change_Tidio() {
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                }
+            });
+        </script>
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
